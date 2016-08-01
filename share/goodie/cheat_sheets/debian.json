@@ -1,0 +1,196 @@
+{
+    "id": "debian_cheat_sheet",
+    "name": "Linux Debian",
+    "description": "debian Reference",
+    "metadata": {
+        "sourceName": "Cheat-Sheets.org",
+        "sourceUrl": "http://www.cheat-sheets.org/saved-copy/refcard-en-a4.pdf"
+},
+    "template_type": "terminal",
+    "section_order": [
+        "Configuration",
+        "Shell Command",
+        "APT",
+        "DPKG",
+        "Web Server",
+        "Database",
+        "Damen"
+        ],
+    "sections": {
+"Configuration": [{
+        "val": "All system configuration files",
+         "key": "/etc/"
+}, {
+        "val": "Default text editor",
+         "key": "nano"
+}, {
+        "val": "Browser interface to system configuration",
+         "key": "webmin"
+}, {
+        "val": "Browser interface to printing system.",
+         "key": "cups"
+}, {
+        "val": "Reconfigure a package",
+         "key": "dpkg-reconfigure"
+}, {
+        "val": "Manage command alternatives",
+         "key": "update-alternatives"
+}, {
+        "val": "After installing a new kernel",
+         "key": "update-grub"
+}, {
+        "val": "Build a kernel packages from sources",
+         "key": "make-kpkg"
+}, {
+        "val": "Create and install third-party modules",
+         "key": "m-a a-i module"
+}], 
+    "Shell Command": [{
+        "val": "Print files to screen",
+         "key": "cat"
+}, {
+        "val": "Compress files",
+         "key": "gzip"
+}, {
+        "val": "Uncompress files",
+         "key": "bzip"
+}, {
+        "val": "Show content of files",
+         "key": "less"
+}, {
+        "val": "Find files",
+         "key": "find"
+}, {
+        "val": "Find search-string in files",
+         "key": "grep"
+}, {
+        "val": "Create a symbolic link to a file",
+         "key": "ln -s"
+}, {
+        "val": "Show current processes",
+         "key": "ps"
+}, {
+        "val": "Become another user",
+         "key": "su- username"
+}, {
+        "val": "Execute a command as root as normal user",
+         "key": "sudo"
+}],
+    "APT": [{
+        "val": "Update packages listings from package repositories",
+         "key": "apt-get"
+}, {
+       "val": "Search packages and descriptions",
+         "key": "apt-cache search"
+}, {
+       "val": "Show versions and priorities of available packages",
+         "key": "apt-cache policy"
+}, {
+       "val": "Show package information incl description",
+         "key": "apt-cache show"
+}, {
+       "val": "Install packages from repositories with all dependencies",
+         "key": "apt-get install"
+}, {
+       "val": "Install newest versions of all packages currently installed",
+         "key": "apt-get upgrade"
+}, {
+       "val": "Like apt-get upgrade,but with advanced conflict resolution",
+         "key": "apt-get dist-upgrade"
+}, {
+       "val": "Remove packages with all needed packages",
+         "key": "apt-get remove"
+}, {
+       "val": "List all packages needed by the given",
+         "key": "apt-cache rdepends"
+}, {
+       "val": "Update content listings from package repositories,",
+         "key": "apt-file update"
+}, {
+       "val": "Search packages for file",
+         "key": "apt-file search"
+}, {
+       "val": "List contents of a package",
+         "key": "apt-file list"
+}, {
+       "val": "Installs packages automatically",
+         "key": "auto-apt"
+}, {
+       "val": "Console interface to APT",
+         "key": "aptitude"
+}, {
+       "val": "GUI interface to APT, needs synaptic",
+         "key": "synaptic"
+}],
+    "DPKG": [{
+        "val": "List packages",
+         "key": "dpkg -l"
+}, {
+        "val": "Show package information",
+         "key": "dpkg -I"
+}, {
+        "val": "List contents of package file",
+         "key": "dpkg -c"
+}, {
+        "val": "Show which package a file belongs to",
+         "key": "dpkg -s"
+}, {
+        "val": "Install package files",
+         "key": "dpkg -i"
+}, {
+        "val": "Override a package versions of file",
+         "key": "dpkg -divret"
+}, {
+        "val": "Query installed packages,format",
+         "key": "dpkg -query"
+}, {
+        "val": "Write package selections to file",
+         "key": "dpkg --get-selections>"
+}, {
+        "val": "Set package selections from file",
+         "key": "dpkg --set-selections<"
+}],
+    "Web Server": [{
+         "val": "Configuration files",
+          "key": "/etc/apache2/"
+}, {
+         "val": "Defines default virtual host",
+          "key": "/etc/apache2/sites-enabled/default"
+}, {
+         "val": "Contains available modules files",
+          "key": "/etc/apache2/mods-available/"
+}],
+    "Database": [{
+         "val": "Create a new database",
+          "key": "createdb"
+}, {
+         "val": "Remove a database",
+          "key": "dropdb"
+}, {
+         "val": "Remove a database user",
+          "key": "dropuser"
+}, {
+         "val": "Client access configuration",
+          "key": "/etc/postgresql/pg_hba.conf"
+}],
+    "Damen": [{
+         "val": "Restart a service, system daemon",
+          "key": "/etc/init.d/file restart"
+}, {
+         "val": "Stop a service, system daemon",
+          "key": "/etc/init.d/file stop"
+}, {
+         "val": "Start a service, system daemon",
+          "key": "/etc/init.d/file start"
+}, {
+         "val": "Halts, reboots, shuts down system",
+          "key": "halt, reboot, poweroff"
+}, {
+         "val": "All log files are under this directory",
+          "key": "/var/log/"
+}, {
+         "val": "Default values for many daemons and services",
+          "key": "/etc/default/"
+}]
+}
+}
